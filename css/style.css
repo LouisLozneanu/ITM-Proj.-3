@@ -6,6 +6,11 @@ body {
 }
 
 /* Navigation styles */
+nav {
+  text-align: center; /* Center the navigation menu */
+  background-color: #333; /* Background color for the navigation menu */
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -19,11 +24,11 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   padding: 10px;
-  color: #333;
+  color: #fff; /* Text color for navigation links */
 }
 
 nav ul li a:hover {
-  background-color: #f0f0f0;
+  background-color: #555; /* Background color for hover state */
 }
 
 /* Header styles */
