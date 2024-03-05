@@ -38,7 +38,21 @@ h1 {
 
 /* Section styles */
 section {
-  margin: 20px;
+  margin: 20px auto; /* Center sections horizontally */
+  max-width: 800px; /* Limit section width */
+}
+
+section h2 {
+  margin-top: 40px; /* Add space between section headings */
+}
+
+section p {
+  margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+/* Experience section styles */
+section ul {
+  margin-left: 20px; /* Indent nested lists */
 }
 
 /* Image styles */
