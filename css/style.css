@@ -3,12 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
 }
 
 /* Navigation styles */
 nav {
-  text-align: center; /* Center the navigation menu */
-  background-color: #333; /* Background color for the navigation menu */
+  text-align: center;
+  background-color: #333;
 }
 
 nav ul {
@@ -24,35 +25,42 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   padding: 10px;
-  color: #fff; /* Text color for navigation links */
+  color: #fff;
 }
 
 nav ul li a:hover {
-  background-color: #555; /* Background color for hover state */
+  background-color: #555;
 }
 
 /* Header styles */
-h1 {
+h1, h2 {
   text-align: center;
+  color: #333;
 }
 
 /* Section styles */
 section {
-  margin: 20px auto; /* Center sections horizontally */
-  max-width: 800px; /* Limit section width */
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-  margin-top: 40px; /* Add space between section headings */
+  margin-top: 40px;
+  color: #555;
 }
 
 section p {
-  margin-bottom: 10px; /* Add space between paragraphs */
+  margin-bottom: 10px;
+  color: #777;
 }
 
 /* Experience section styles */
 section ul {
-  margin-left: 20px; /* Indent nested lists */
+  margin-left: 20px;
 }
 
 /* Image styles */
