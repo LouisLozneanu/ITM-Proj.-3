@@ -49,14 +49,23 @@ img {
   margin: 0 auto;
 }
 
-/* Sibling photo styles */
-#siblingPhoto {
+/* photo styles */
+#siblingPhoto,
+#PathwayBrassBandPhoto {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#videoGamePhoto {
   display: block;
   margin: 20px auto;
 }
 
-/* Video game photo styles */
-#videoGamePhoto {
+/* Video styles */
+iframe {
   display: block;
   margin: 20px auto;
 }
