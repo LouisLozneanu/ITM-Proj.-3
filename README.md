@@ -1,2 +1,2 @@
-# ITM-Proj.-2
-Project 2 repository for ITMD 361
+# ITM-Proj.-3
+Project 3 repository for ITMD 361
