@@ -93,3 +93,23 @@ section {
   width: 100%; /* Width 100% for fluidity */
   box-sizing: border-box; /* Include padding in the width calculation */
 }
+
+/* Map styles */
+#map {
+  height: 400px; /* Set map height */
+  width: 100%; /* Set map width */
+}
+
+/* Header styles for map.html */
+#header {
+  background-color: #333; /* Dark gray background color for header */
+  padding: 10px 0; /* Adjust padding for better alignment */
+}
+
+#header nav ul li a {
+  color: #fff; /* White text color for navigation links */
+}
+
+#header nav ul li a:hover {
+  background-color: #555; /* Darker gray background color for hover state */
+}
