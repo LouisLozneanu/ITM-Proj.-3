@@ -1,29 +1,27 @@
-function init(){
-	//alert('it works');
-	var el = document.getElementById('canvas');
-	var myLocation = new google.maps.LatLng(41.83566926343903, -87.62569531405664);
-	var mapOptions = {
-		center: myLocation,
-		zoom: 18,
-		mapTypeId: google.maps.MapTypeId.SATELLITE,
-		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.BOTTOM_CENTER
-		}
-	};
+function initMap() {
+    var myLocation = { lat: 41.83566926343903, lng: -87.62569531405664 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: myLocation,
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.SATELLITE,
+        mapTypeControlOptions: {
+            position: google.maps.ControlPosition.BOTTOM_CENTER
+        }
+    });
 
-	var myMap = new google.maps.Map(el, mapOptions);
+    var marker = new google.maps.Marker({
+        position: myLocation,
+        map: map,
+        title: 'IIT MTCC'
+    });
 
-	var contentString = '<h1>IIT MTCC</h1><p>The McCormick Tribune Campus Center</p>';
+    var contentString = '<h1>IIT MTCC</h1><p>The McCormick Tribune Campus Center</p>';
 
-	var infowindow = new google.maps.InfoWindow({
-      content: contentString
-  	});
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
 
-	google.maps.event.addListener(marker, 'mouseover', function() {
-    	infowindow.open(myMap, marker);
-  	});
-
-
+    marker.addListener('mouseover', function() {
+        infowindow.open(map, marker);
+    });
 }
-
-google.maps.event.addDomListener(window, 'load', init);
